@@ -1,0 +1,217 @@
+*{
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+   font-family: 'Lato', sans-serif;
+}
+
+header{
+   height: 8vh;
+   width: 100vw;
+   position: sticky;
+}
+
+header nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #2e2326;
+   height: 8vh;
+   width: 100vw;
+   position: absolute;
+   -webkit-box-shadow:0px 10px 39px 10px rgba(62,66,66,0.22);
+   -moz-box-shadow: 0px 10px 39px 10px rgba(62,66,66,0.22);
+   box-shadow: 0px 10px 39px 10px rgba(62,66,66,0.22);
+}
+
+header nav div.menu{
+   height: 8vh;
+   width: 100vw;
+   display: flex;
+   float: right;
+}
+
+header nav div.image{
+   height: 8vh;
+   width: 18vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header nav div.image img{
+   height: 7vh;
+   width: 7vh;
+   border-radius: 50%;
+}
+
+header nav div.image p{
+   color: white;
+   padding-left: 1vw;
+}
+
+header nav div.menu div.nav{
+   height: 8vh;
+   width: 80vw;
+   display: flex;
+}
+
+header nav div.menu div.nav ul{
+   height: 8vh;
+   width: 80vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header nav div.menu div.nav li{
+   display: inline;
+   margin-left: 2vw;
+}
+
+header nav div.menu div.nav li a{
+   color: white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+header nav div.menu div.nav li a:hover{
+   position: relative;
+   top: -2px;
+   color: rgb(255, 154, 176);
+   font-weight: bold;
+}
+
+div.background-image{
+   background-image: url('background.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-x: center;
+   height: 92vh;
+   width: 100vw;
+   box-shadow: inset 0 0 50rem rgb(15, 8, 9);
+   position: fixed;
+   top: 8vh;
+}
+
+main{
+   position: relative;
+   width: 100vw;
+}
+
+main div.conteudo{
+   width: 88vw;
+   margin-left: 4vw;
+   margin-right: 4vw;
+   margin-top: 1vw;
+   margin-bottom: 1vw;
+}
+
+main div.conteudo section{
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   margin-left: 1vw;
+   margin-right: 1vw;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+   padding-left: 3vw;
+   padding-right: 3vw;
+   background-color: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   border-radius: 5px;
+   box-shadow: 0px 1px 9px 4px rgba(0,0,0,0.1);
+   color: white;
+}
+
+main div.conteudo section.Sobre div{
+   margin-left: 1vw;
+   margin-right: 1vw;
+}
+
+main div.conteudo section.Sobre div.imagem img{
+   border-radius: 15px;
+   height: 22vh;
+   width: 22vh;
+   object-fit: cover;
+   transition: 0.5s;
+}
+
+main div.conteudo section.Sobre div.imagem{
+   height: 25vh;
+   width: 25vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main div.conteudo section.Sobre div.imagem img:hover{
+   position: relative;
+   left: -2px;
+   box-shadow: 0px 1px 9px 4px rgba(0,0,0,0.1);
+}
+
+main div.conteudo section.Sobre div.textos{
+   width: 70vw;
+}
+
+main div.conteudo section.Mensagem{
+   font-size: 15px;
+   text-align: center;
+}
+
+@media (max-width: 999px) {
+   header{
+      height: 20vh;
+      width: 100vw;
+      position: sticky;
+   }
+   
+   header nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+      background: #2e2326;
+      height: 20vh;
+   }
+   
+   header nav div.menu{
+      height: 20vh;
+      width: 100vw;
+      display: block;
+   }
+   
+   header nav div.image{
+      height: 10vh;
+      width: 100vw;
+      display: flex !important;
+   }
+
+   header nav div.menu div.nav{
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   main div.conteudo section.Sobre {
+      justify-content: center;
+      align-items: center;
+   }
+
+   main div.conteudo section.Sobre div.imagem{
+      justify-content: center;
+      align-items: center;
+   }
+
+   main div.conteudo section.Sobre div.textos{
+      margin-top: 2vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
