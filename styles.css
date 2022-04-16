@@ -157,6 +157,10 @@ main div.conteudo section.Sobre div.textos{
    width: 70vw;
 }
 
+main div.conteudo section.Sobre div.textos p{
+   margin-top: 2vh;
+}
+
 main div.conteudo section.Mensagem{
    font-size: 15px;
    text-align: center;
@@ -168,7 +172,7 @@ main div.conteudo section.Mensagem{
       width: 100vw;
       position: sticky;
    }
-   
+
    header nav{
       display: flex;
       justify-content: center;
@@ -196,16 +200,24 @@ main div.conteudo section.Mensagem{
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 16px;
+   }
+
+   header nav div.menu div.nav ul{
+      height: 8vh;
+      width: 100vw;
    }
 
    main div.conteudo section.Sobre {
       justify-content: center;
       align-items: center;
+      display: block;
    }
 
    main div.conteudo section.Sobre div.imagem{
-      justify-content: center;
-      align-items: center;
+      width: 25vh;
+      margin-left: auto;
+      margin-right: auto;
    }
 
    main div.conteudo section.Sobre div.textos{
@@ -213,5 +225,9 @@ main div.conteudo section.Mensagem{
       justify-content: center;
       align-items: center;
       text-align: center;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2vh;
    }
 }
