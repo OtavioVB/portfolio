@@ -3,6 +3,7 @@
    margin: 0;
    overflow-x: hidden;
    font-family: 'Lato', sans-serif;
+   box-sizing: border-box;
 }
 
 header{
@@ -237,27 +238,47 @@ main div.conteudo section.Tecnologias-BancoDeDados div.all-content div.textos p{
    margin-top: 0.5vh;
 }
 
-main div.conteudo section.photos div.carrosel{
-   margin-top: 2vh;
-   margin-bottom: 2vh;
-   overflow: hidden;
-   width: 136vw;
-   height: 76vh;
-}
-
-main div.conteudo section.photos div.carrosel ul{
-   list-style: none;
+main div.conteudo section.photos div.items-wrapper div.items{
    display: flex;
-   width: 544vw;
-   height: 304vh;
+   overflow-x: auto;
+   width: 54.64vw;
+   scroll-snap-type: x mandatory;
+   -webkit-overflow-scrolling: touch;
+   scroll-behavior: smooth;
+   margin-top: 1vw;
 }
 
-main div.conteudo section.photos div.carrosel ul li{
-   position: relative;
+main div.conteudo section.photos div.items-wrapper div.items div.item{
+   flex: none;
+   width: 54.64vw;
+   height: 30.72vw;
+   overflow-y: hidden;
+   scroll-snap-align: start;
+   margin: 4px;
+   border-radius: 10px;
 }
 
-main div.conteudo section.photos div.carrosel img{
+main div.conteudo section.photos div.items-wrapper div.items::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background-color: #f5f5f500;
+}
+
+main div.conteudo section.photos div.items-wrapper div.items::-webkit-scrollbar{
+   margin: 2px;
+   height: 10px;
+	width: 12px;
+	background-color: #f5f5f500;
+}
+
+main div.conteudo section.photos div.items-wrapper div.items::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+main div.conteudo section.photos div.items-wrapper div.items div.item img{
    object-fit: cover;
+   width: 54.64vw;
+   height: 30.72vw;
 }
 
 @media (max-width: 999px) {
