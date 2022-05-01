@@ -409,6 +409,21 @@ footer section.section-footer nav div.contato ul li a{
       margin-left: auto;
       margin-right: auto;
    }
+
+   footer section.section-footer nav{
+      height: 12vw;
+   }
+   
+   footer section.section-footer nav div.contato{
+      width: 70vw;
+      margin-left: 15vw;
+      margin-right: 15vw;
+      height: 12vw;
+   }
+   
+   footer section.section-footer nav div.contato ul{
+      width: 70vw;
+   }
 }
 
 @keyframes float{
