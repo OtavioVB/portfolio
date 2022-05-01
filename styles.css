@@ -241,7 +241,7 @@ main div.conteudo section.Tecnologias-BancoDeDados div.all-content div.textos p{
 main div.conteudo section.photos div.items-wrapper div.items{
    display: flex;
    overflow-x: auto;
-   width: 54.64vw;
+   width: 71vw;
    scroll-snap-type: x mandatory;
    -webkit-overflow-scrolling: touch;
    scroll-behavior: smooth;
@@ -250,8 +250,8 @@ main div.conteudo section.photos div.items-wrapper div.items{
 
 main div.conteudo section.photos div.items-wrapper div.items div.item{
    flex: none;
-   width: 54.64vw;
-   height: 30.72vw;
+   width: 71vw;
+   height: 40vw;
    overflow-y: hidden;
    scroll-snap-align: start;
    margin: 4px;
@@ -277,8 +277,8 @@ main div.conteudo section.photos div.items-wrapper div.items::-webkit-scrollbar-
 
 main div.conteudo section.photos div.items-wrapper div.items div.item img{
    object-fit: cover;
-   width: 54.64vw;
-   height: 30.72vw;
+   width: 71vw;
+   height: 40vw;
 }
 
 @media (max-width: 999px) {
