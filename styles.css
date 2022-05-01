@@ -149,12 +149,6 @@ main div.conteudo section.Sobre div.imagem{
    align-items: center;
 }
 
-main div.conteudo section.Sobre div.imagem img:hover{
-   position: relative;
-   left: -2px;
-   box-shadow: 0px 1px 9px 4px rgba(0,0,0,0.1);
-}
-
 main div.conteudo section.Sobre div.textos{
    width: 70vw;
    margin-bottom: 2vh;
@@ -167,6 +161,7 @@ main div.conteudo section.Sobre div.textos p{
 main div.conteudo section.Mensagem{
    font-size: 15px;
    text-align: center;
+   animation: float 3s ease-in-out infinite;
 }
 
 main div.conteudo section.Sobre div.textos h4{
@@ -182,15 +177,9 @@ main div.conteudo section.Tecnologias div.all-content{
 main div.conteudo section.Tecnologias div.all-content div.image img{
    height: 10rem;
    width: 10rem;
-   transition: 0.5s;
    justify-content: center;
    align-items: center;
    display: flex;
-}
-
-main div.conteudo section.Tecnologias div.all-content div.image img:hover{
-   height: 12rem;
-   width: 12rem;
 }
 
 main div.conteudo section.Tecnologias div.all-content div.textos{
@@ -218,12 +207,6 @@ main div.conteudo section.Tecnologias-BancoDeDados div.all-content div.image img
    justify-content: center;
    align-items: center;
    display: flex;
-}
-
-
-main div.conteudo section.Tecnologias-BancoDeDados div.all-content div.image img:hover{
-   height: 12rem;
-   width: 12rem;
 }
 
 main div.conteudo section.Tecnologias-BancoDeDados div.all-content div.textos{
@@ -275,10 +258,56 @@ main div.conteudo section.photos div.items-wrapper div.items::-webkit-scrollbar-
 	background-color: rgba(255, 255, 255, 0.404);
 }
 
+body::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background-color: rgba(46,35,38);
+}
+
+body::-webkit-scrollbar{
+   margin: 2px;
+   height: 10px;
+	width: 12px;
+	background-color: rgba(46,35,38);
+}
+
+body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.027);
+}
+
 main div.conteudo section.photos div.items-wrapper div.items div.item img{
    object-fit: cover;
    width: 71vw;
    height: 40vw;
+}
+
+footer section.section-footer nav{
+   margin-top: 10vw;
+   position: absolute;
+   height:4vw;
+   width: 100vw;
+   background: #2e2326;
+   box-shadow: 0px -5px 15px -3px rgba(0,0,0,0.5);
+}
+
+footer section.section-footer nav div.contato{
+   width: 40vw;
+   margin-left: 30vw;
+   margin-right: 30vw;
+   display: flex;
+   align-items: center;
+   height: 4vw;
+}
+
+footer section.section-footer nav div.contato ul{
+   display:flex;
+   justify-content: space-around;
+   width: 40vw;
+}
+
+footer section.section-footer nav div.contato ul li a{
+   text-decoration: none;
+   color: white;
 }
 
 @media (max-width: 999px) {
@@ -379,5 +408,17 @@ main div.conteudo section.photos div.items-wrapper div.items div.item img{
    main div.conteudo section.Tecnologias-BancoDeDados div.all-content img{
       margin-left: auto;
       margin-right: auto;
+   }
+}
+
+@keyframes float{
+   0%{
+      transform: translateY(0);
+   }
+   50%{
+      transform: translateY(-4px);
+   }
+   100%{
+      transform: translateY(0);
    }
 }
